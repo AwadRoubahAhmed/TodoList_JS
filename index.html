@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo_liste</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form id="form">
+      <input
+        autocomplete="off"
+        type="text"
+        placeholder="Ajouter une tache..."
+        id="champ"
+        class="champ"
+        required
+      />
+      <input type="submit" id="btnAjouter" value="+" class="btnAjouter" />
+    </form>
+    <small id="noTache" class="noTache"
+      ><em>Aucune tache en cours...</em></small
+    >
+
+    <ol id="ol"></ol>
+
+    <script src="app.js"></script>
+  </body>
+</html>

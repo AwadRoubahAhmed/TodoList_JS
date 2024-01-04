@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Chela+One&family=Inter:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: linear-gradient(#22c1c3 0%, #dfdfdf 100%);
+  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+}
+input {
+  outline: none;
+}
+
+/* form */
+#form {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  font-size: 5vw;
+  margin-bottom: 3vh;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.4);
+}
+#form .champ {
+  flex-basis: 82vw;
+  background-color: #9fc6c7;
+  padding-left: 1vw;
+}
+#form .btnAjouter {
+  flex-basis: 17vw;
+  background-color: #8add92;
+  color: teal;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+#form .btnAjouter:active {
+  background-color: #60ff60;
+}
+.champ,
+.btnAjouter {
+  font-size: 7vw;
+  border: 2px solid teal;
+  border-radius: 5px;
+}
+#noTache {
+  display: block;
+  font-size: 6vw;
+  color: #444;
+}
+
+/* listes */
+ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  padding: 0 1vw;
+}
+ol li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  counter-increment: my-awesome-counter;
+  background-color: #7bc7c8;
+  color: teal;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  font-size: 5vw;
+  text-transform: capitalize;
+}
+ol li::before {
+  content: counter(my-awesome-counter) "~ ";
+  color: #5a7c81;
+}
+.material-symbols-outlined.md-24 {
+  font-size: 6vw;
+}
+
+/* classes */
+.delete,
+.urgent {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.delete:hover,
+.urgent:hover {
+  transform: rotate(360deg);
+}
+.delete {
+  color: orangered;
+}
+.urgent {
+  color: gray;
+}
+.gold {
+  color: gold;
+}
+.texte {
+  display: inline-block;
+  width: 78vw;
+  word-wrap: break-word;
+}
+.spanOpt {
+  display: flex;
+  justify-content: flex-end;
+  flex: auto;
+}
+
+/* Medias Queries */
+@media screen and (min-width: 700px) {
+  .champ,
+  .btnAjouter {
+    font-size: 2.5rem;
+  }
+  .noTache,
+  .material-symbols-outlined.md-24,
+  li {
+    font-size: 2.5rem;
+  }
+}
